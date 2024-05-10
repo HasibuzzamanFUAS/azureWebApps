@@ -1,1 +1,1 @@
-# azureWebApps
+# azureWebApps ASP .Net core
