@@ -1,0 +1,133 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice> az --version
+azure-cli                         2.60.0
+
+core                              2.60.0
+telemetry                          1.1.0
+
+Dependencies:
+msal                              1.28.0
+azure-mgmt-resource             23.1.0b2
+
+Python location 'C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\python.exe'
+Extensions directory 'C:\Users\H Zaman Niloy\.azure\cliextensions'
+
+Python (Windows) 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 21:52:07) [MSC v.1937 32 bit (Intel)]
+
+Legal docs and information: aka.ms/AzureCliLegal
+
+
+Your CLI is up-to-date.
+PS E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice> docker --version
+Docker version 26.0.0, build 2ae903e
+PS E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice> docker images
+error during connect: this error may indicate that the docker daemon is not running: Head "http://%2F%2F.%2Fpipe%2Fdocker_engine/_ping": open //./pipe/docker_engine: The system cannot find the file specified.
+PS E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice> docker login
+Authenticating with existing credentials...
+Login did not succeed, error: error during connect: this error may indicate that the docker daemon is not running: Post "http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.45/auth": open //./pipe/docker_engine: The system cannot find the file specified.
+Log in with your Docker ID or email address to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com/ to create one.
+You can log in with your password or a Personal Access Token (PAT). Using a limited-scope PAT grants better security and is required for organizations using SSO. Learn more at https://docs.docker.com/go/access-tokens/
+
+Username (hasibuzzaman14): hasibuzzaman14
+Password:
+Login Succeeded
+PS E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice> docker images
+error during connect: this error may indicate that the docker daemon is not running: Head "http://%2F%2F.%2Fpipe%2Fdocker_engine/_ping": open //./pipe/docker_engine: The system cannot find the file specified.
+PS E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice> dotnet --version
+8.0.204
+PS E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice>
+PS E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice> dotnet new mvc TestApp
+Error: Invalid option(s):
+TestApp
+   'TestApp' is not a valid option
+
+For more information, run:
+   dotnet new mvc -h
+
+For details on the exit code, refer to https://aka.ms/templating-exit-codes#127
+PS E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice> dotnet new mvc --name TestApp
+The template "ASP.NET Core Web App (Model-View-Controller)" was created successfully.
+This template contains technologies from parties other than Microsoft, see https://aka.ms/aspnetcore/8.0-third-party-notices for details.
+
+Processing post-creation actions...
+Restoring E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice\TestApp\TestApp.csproj:
+  Determining projects to restore...
+  Restored E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice\TestApp\TestApp.csproj (in 163 ms).
+Restore succeeded.
+
+
+PS E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice> cd .\TestApp\
+PS E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice\TestApp> dotnet run
+Building...
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5127
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice\TestApp
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+PS E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice\TestApp> dotnet publish -o pub
+MSBuild version 17.9.8+b34f75857 for .NET
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  TestApp -> E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice\TestApp\bin\Release\net8.0\TestApp.dll
+  TestApp -> E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice\TestApp\pub\
+PS E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice\TestApp> az login
+A web browser has been opened at https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize. Please continue the login in the web browser. If no web browser is available or if the web browser fails to open, use device code flow with `az login --use-device-code`.
+[
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "66c5e13f-8c43-4359-b2e8-51775c6d298d",
+    "id": "a8c0e317-615b-4835-93af-ca250673b8c9",
+    "isDefault": true,
+    "managedByTenants": [],
+    "name": "Azure for Students",
+    "state": "Enabled",
+    "tenantId": "66c5e13f-8c43-4359-b2e8-51775c6d298d",
+    "user": {
+      "name": "hasibuzzaman@stud.fra-uas.de",
+      "type": "user"
+    }
+  }
+]
+PS E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice\TestApp> az webapp deployment source config-zip --src testSite.zip --resource-group RG-Exercise1 --name testWebAppCC
+D:\a\_work\1\s\build_scripts\windows\artifacts\cli\Lib\site-packages\cryptography/hazmat/backends/openssl/backend.py:17: UserWarning: You are using cryptography on a 32-bit Python on a 64-bit Windows Operating System. Cryptography will be significantly faster if you switch to using a 64-bit Python.
+This command has been deprecated and will be removed in a future release. Use 'az webapp deploy' instead.
+Getting scm site credentials for zip deployment
+Starting zip deployment. This operation can take a while to complete ...
+Deployment endpoint responded with status code 202
+{
+  "active": true,
+  "author": "N/A",
+  "author_email": "N/A",
+  "build_summary": {
+    "errors": [],
+    "warnings": []
+  },
+  "complete": true,
+  "deployer": "Push-Deployer",
+  "end_time": "2024-05-10T15:57:00.9972999Z",
+  "id": "163284b4-4ee3-425e-8977-26dca9906c8e",
+  "is_readonly": true,
+  "is_temp": false,
+  "last_success_end_time": "2024-05-10T15:57:00.9972999Z",
+  "log_url": "https://testwebappcc.scm.azurewebsites.net/api/deployments/163284b4-4ee3-425e-8977-26dca9906c8e/log",
+  "message": "Created via a push deployment",
+  "progress": "",
+  "received_time": "2024-05-10T15:56:55.4285759Z",
+  "site_name": "testwebappcc",
+  "start_time": "2024-05-10T15:56:56.9766965Z",
+  "status": 4,
+  "status_text": "",
+  "url": "https://testwebappcc.scm.azurewebsites.net/api/deployments/163284b4-4ee3-425e-8977-26dca9906c8e"
+}
+PS E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice\TestApp>

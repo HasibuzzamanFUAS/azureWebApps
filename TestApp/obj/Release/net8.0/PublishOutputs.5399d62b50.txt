@@ -1,0 +1,7 @@
+E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice\TestApp\pub\TestApp.exe
+E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice\TestApp\pub\appsettings.Development.json
+E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice\TestApp\pub\appsettings.json
+E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice\TestApp\pub\TestApp.dll
+E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice\TestApp\pub\TestApp.deps.json
+E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice\TestApp\pub\TestApp.runtimeconfig.json
+E:\Fra-UAS\2 Summer 24\Cloud Computing\CC_Practice\TestApp\pub\TestApp.pdb
